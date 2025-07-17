@@ -7,7 +7,7 @@ export default function Card({ imageUrl, title, date }) {
     })
     .toUpperCase();
 
-  const displayUrl = imageUrl || "https://placehold.co/600x400/orange/white?text=Suitmedia";
+  const displayUrl = imageUrl;
 
   return (
     <div className="card">

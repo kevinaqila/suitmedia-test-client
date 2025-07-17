@@ -47,6 +47,7 @@ export default function App() {
 
       <main>
         <Routes>
+          <Route path="/" element={<Navigate to="/ideas" />} />
           <Route path="/work" element={<WorkPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
