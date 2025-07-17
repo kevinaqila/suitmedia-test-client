@@ -48,7 +48,8 @@ export default function IdeasPage() {
       });
 
       try {
-        const res = await fetch(`/api/ideas?${params.toString()}`);
+        const apiUrl = `${import.meta.env.VITE_API_BASE_URL}/api/ideas?${params.toString()}`;
+        const res = await fetch(apiUrl);
 
         const data = await res.json();
 
