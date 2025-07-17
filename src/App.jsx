@@ -6,7 +6,7 @@ import WorkPage from "./pages/WorkPage";
 import ServicePage from "./pages/ServicePage";
 import CareersPage from "./pages/CareersPage";
 import "./App.css";
-import logo from "./assets/site-logo.png";
+import logo from "./site-logo.png";
 import { Routes, Route, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
