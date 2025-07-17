@@ -1,14 +1,28 @@
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
+  const getNavLinkClass = ({ isActive }) => (isActive ? "active" : "");
+
   return (
     <nav>
-      <NavLink to="/work">Work</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/contact">Contact</NavLink>
-      <NavLink to="/ideas">Ideas</NavLink>
-      <NavLink to="/service">Service</NavLink>
-      <NavLink to="/careers">Careers</NavLink>
+      <NavLink to="/work" className={getNavLinkClass}>
+        Work
+      </NavLink>
+      <NavLink to="/about" className={getNavLinkClass}>
+        About
+      </NavLink>
+      <NavLink to="/contact" className={getNavLinkClass}>
+        Contact
+      </NavLink>
+      <NavLink to="/ideas" className={getNavLinkClass}>
+        Ideas
+      </NavLink>
+      <NavLink to="/service" className={getNavLinkClass}>
+        Service
+      </NavLink>
+      <NavLink to="/careers" className={getNavLinkClass}>
+        Careers
+      </NavLink>
     </nav>
   );
 }

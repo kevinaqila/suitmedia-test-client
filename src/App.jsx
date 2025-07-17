@@ -7,7 +7,7 @@ import ServicePage from "./pages/ServicePage";
 import CareersPage from "./pages/CareersPage";
 import "./App.css";
 import logo from "/site-logo.png";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export default function App() {
@@ -36,8 +36,8 @@ export default function App() {
       <div className="header-bg">
         <header className={`${!showHeader ? "header-hidden" : ""} ${isScrolled ? "header-scrolled" : ""}`}>
           <div className="logo">
-            <Link to="/">
-              <img src={logo} alt="" />
+            <Link to="/ideas">
+              <img src={logo} alt="Suitmedia Logo" />
             </Link>
           </div>
 
@@ -47,7 +47,7 @@ export default function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<IdeasPage />} />
+          <Route path="/" element={<Navigate replace to="/ideas" />} />
           <Route path="/work" element={<WorkPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
