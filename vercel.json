@@ -1,3 +1,11 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    "rewrites": [{
+            "source": "/api/:path*",
+            "destination": "https://suitmedia-test-api.vercel.app/api/:path*"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
 }
