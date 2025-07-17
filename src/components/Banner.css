@@ -1,0 +1,38 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.banner-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+.banner-desc {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-desc h1 {
+    font-size: 54px;
+}
+
+.banner-desc p {
+    font-size: 16px;
+}
