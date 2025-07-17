@@ -48,7 +48,7 @@ export default function IdeasPage() {
       });
 
       try {
-        const res = await fetch(`http://localhost:3001/api/ideas?${params.toString()}`);
+        const res = await fetch(`/api/ideas?${params.toString()}`);
 
         const data = await res.json();
 
